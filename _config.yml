@@ -54,3 +54,21 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+
+header:
+  ente_appartenenza: "Ente XYZ"
+  links:
+    - title: "Link 1"
+      url: "#"
+    - title: "Link 2"
+      url: "#"
+    - title: "Link 3"
+      url: "#"
+  lingua:
+    selezionata: "ITA"
+    opzioni:
+      - code: "ITA"
+        label: "ITA"
+      - code: "ENG"
+        label: "ENG"
+  accedi_url: "#"
