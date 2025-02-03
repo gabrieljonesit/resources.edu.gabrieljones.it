@@ -73,13 +73,34 @@ header:
         label: "ENG"
   accedi_url: "#"
 
-
-header_center:
+header:
   istituzione:
     nome: "Nome dell'Istituzione"
-    tagline: "Tag line dell'Istituzione"
+    tagline: "Tagline dell'Istituzione"
   social_links:
-    facebook: "#"
-    github: "#"
-    twitter: "#"
+    facebook: "https://facebook.com"
+    github: "https://github.com"
+    twitter: "https://twitter.com"
+  sidebar_links:
+    - title: "Link lista 1"
+      url: "#"
+      status: "active"
+    - title: "Link lista 2"
+      url: "#"
+      status: "disabled"
+    - title: "Link lista 3"
+      url: "#"
+      status: "normal"
+    - title: "Link lista 4"
+      url: "#"
+      status: "normal"
+    - title: "Link secondario 1"
+      url: "#"
+      status: "normal"
+    - title: "Link secondario 2"
+      url: "#"
+      status: "active"
+    - title: "Link secondario 3"
+      url: "#"
+      status: "disabled"
   cerca_url: "#"
