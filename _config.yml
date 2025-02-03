@@ -72,3 +72,14 @@ header:
       - code: "ENG"
         label: "ENG"
   accedi_url: "#"
+
+
+header_center:
+  istituzione:
+    nome: "Nome dell'Istituzione"
+    tagline: "Tag line dell'Istituzione"
+  social_links:
+    facebook: "#"
+    github: "#"
+    twitter: "#"
+  cerca_url: "#"
