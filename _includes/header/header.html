@@ -107,3 +107,60 @@
     </div>
   </div>
 </div>
+
+
+<style>
+  /* Stile di base per la sidebar */
+.sidebar-wrapper {
+  position: fixed;
+  top: 0;
+  left: -250px; /* Sidebar nascosta di default */
+  width: 250px;
+  height: 100%;
+  background-color: #f8f9fa;
+  transition: left 0.3s ease-in-out;
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Stile quando la sidebar è visibile */
+.sidebar-wrapper.open {
+  left: 0; /* Sidebar visibile */
+}
+
+/* Aggiungi uno stile per l'overlay quando la sidebar è aperta */
+.sidebar-wrapper.open + .overlay {
+  display: block;
+}
+
+/* Overlay per oscurare il contenuto sottostante */
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+/* Stile dell'icona per aprire la sidebar */
+.sidebar-toggle {
+  cursor: pointer;
+  display: inline-block;
+}
+</style>
+<script>
+  // Quando l'utente clicca sull'icona per aprire la sidebar
+document.getElementById("sidebarToggle").addEventListener("click", function() {
+  document.getElementById("sidebar").classList.toggle("open");
+  document.querySelector(".overlay").classList.toggle("open");
+});
+
+// Quando l'utente clicca sull'overlay, la sidebar si chiude
+document.querySelector(".overlay").addEventListener("click", function() {
+  document.getElementById("sidebar").classList.remove("open");
+  document.querySelector(".overlay").classList.remove("open");
+});
+
+</script>
